@@ -235,7 +235,7 @@ public class BrowseActivity extends ShortyzActivity implements RecyclerItemClick
     public boolean onOptionsItemSelected(MenuItem item) {
     	if(item.getTitle().equals("Sign In")){
             if(this.signedIn){
-                System.out.println("Shwoing achievements.");
+                System.out.println("Showing achievements.");
                 startActivityForResult(this.mHelper.getGamesClient().getAchievementsIntent(), 0);
             } else {
                 Intent i = new Intent(this, GamesSignIn.class);
