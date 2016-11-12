@@ -38,8 +38,12 @@
 			<!--android:key="downloadWaPo" />-->
 		<com.jenzz.materialpreference.CheckBoxPreference
 			android:title="Newsday"
-			android:defaultValue="true"
+			android:defaultValue="false"
 			android:key="downloadNewsday" />
+		<com.jenzz.materialpreference.CheckBoxPreference
+			android:title="New York Times Syndicated"
+			android:defaultValue="false"
+			android:key="downloadNYTSyndicated" />
 		<!-- CheckBoxPreference
 			android:title="Houston Chronicle"
 			android:defaultValue="true"
@@ -47,29 +51,29 @@
 			android:key="downloadChron" /-->
  		<CheckBoxPreference
  			android:title="Joseph Crosswords"
- 			android:defaultValue="true"
+ 			android:defaultValue="false"
  			android:summary="Updates Monday-Saturday"
  			android:key="downloadJoseph" />
 		<com.jenzz.materialpreference.CheckBoxPreference
 			android:title="Los Angeles Times"
-			android:defaultValue="true"
+			android:defaultValue="false"
 			android:key="downloadLat" />
  		<CheckBoxPreference
  			android:title="Sheffer Crosswords"
- 			android:defaultValue="true"
+ 			android:defaultValue="false"
  			android:summary="Updates Monday-Saturday"
  			android:key="downloadSheffer" />
 		<CheckBoxPreference
 			android:title="Thinks.com"
-			android:defaultValue="true"
+			android:defaultValue="false"
 			android:key="downloadThinks" />
 		<com.jenzz.materialpreference.CheckBoxPreference
 			android:title="Universal Crossword"
-			android:defaultValue="true"
+			android:defaultValue="false"
 			android:key="downloadUniversal" />
 		<com.jenzz.materialpreference.CheckBoxPreference
 			android:title="USA Today"
-			android:defaultValue="true"
+			android:defaultValue="false"
 			android:summary="Updates Monday-Saturday"
 			android:key="downloadUSAToday" />
 	</PreferenceScreen>
@@ -95,7 +99,7 @@
 				android:key="downloadJonesin" />
 			<com.jenzz.materialpreference.CheckBoxPreference
 				android:title="New York Times Classic"
-				android:defaultValue="true"
+				android:defaultValue="false"
 				android:summary="Updates Mondays"
 				android:key="downloadNYTClassic" />
 			<!--<com.jenzz.materialpreference.CheckBoxPreference-->
@@ -105,12 +109,12 @@
 				<!--android:key="downloadAvClub" />-->
 			<com.jenzz.materialpreference.CheckBoxPreference
 				android:title="Washington Post Puzzler"
-				android:defaultValue="true"
+				android:defaultValue="false"
 				android:summary="Updates Sundays"
 				android:key="downloadWaPoPuzzler" />
 		    <com.jenzz.materialpreference.CheckBoxPreference
 				android:title="People Magazine"
-				android:defaultValue="true"
+				android:defaultValue="false"
 				android:summary="Updates Thursdays"
 				android:key="scrapePeople" />
 			 <!--<com.jenzz.materialpreference.CheckBoxPreference-->

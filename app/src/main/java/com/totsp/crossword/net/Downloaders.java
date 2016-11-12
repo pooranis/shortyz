@@ -112,6 +112,12 @@ public class Downloaders {
                     "Newsday"));
 		}
 
+		if (prefs.getBoolean("downloadNYTSyndicated", true)) {
+			downloaders.add(new BrainsOnlyDownloader(
+					"http://nytsyn.pzzl.com/nytsyn-crossword/nytsyncrossword?date=",
+					"New York Times Syndicated"));
+		}
+
 		if (prefs.getBoolean("downloadUSAToday", true)) {
 			downloaders.add(new UclickDownloader("usaon", "USA Today",
 					"USA Today", Downloader.DATE_NO_SUNDAY));
