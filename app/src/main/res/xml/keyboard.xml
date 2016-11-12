@@ -35,7 +35,7 @@
                 android:isRepeatable="true"
                 android:keyEdgeFlags="left"
                 android:keyWidth="15%p" 
-                android:keyIcon="@drawable/space"
+                android:keyIcon="@drawable/space_white"
                 android:iconPreview="@drawable/space"
                 />
                
@@ -49,7 +49,7 @@
         <Key android:codes="67" 
                 android:keyWidth="15%p" android:keyEdgeFlags="right"
                 android:isRepeatable="true"
-                android:keyIcon="@drawable/delete"
+                android:keyIcon="@drawable/delete_white"
                 android:iconPreview="@drawable/delete"
                 /> 
                

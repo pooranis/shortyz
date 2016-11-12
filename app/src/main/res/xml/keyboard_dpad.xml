@@ -35,7 +35,7 @@
                 android:isRepeatable="true"
                 android:keyEdgeFlags="left"
                 android:keyWidth="15%p" 
-                android:keyIcon="@drawable/space"
+                android:keyIcon="@drawable/space_white"
                 android:iconPreview="@drawable/space"
                 />
                
@@ -49,25 +49,25 @@
         <Key android:codes="67" 
                 android:keyWidth="15%p" android:keyEdgeFlags="right"
                 android:isRepeatable="true"
-                android:keyIcon="@drawable/delete"
+                android:keyIcon="@drawable/delete_white"
                 android:iconPreview="@drawable/delete"
                 /> 
     </Row> 
  	<Row android:rowEdgeFlags="bottom"> 
  		<Key android:codes="19"
- 		     android:keyIcon="@drawable/iconup"
+ 		     android:keyIcon="@drawable/iconup_white"
              android:iconPreview="@drawable/iconup"
              android:keyWidth="25%p"/>
  		<Key android:codes="20"
- 		     android:keyIcon="@drawable/icondown"
+ 		     android:keyIcon="@drawable/icondown_white"
              android:iconPreview="@drawable/icondown"
              android:keyWidth="25%p"/>
  		<Key android:codes="21" 
- 		     android:keyIcon="@drawable/iconleft"
+ 		     android:keyIcon="@drawable/iconleft_white"
              android:iconPreview="@drawable/iconleft"
              android:keyWidth="25%p"/>
  		<Key android:codes="22"
- 		     android:keyIcon="@drawable/iconright"
+ 		     android:keyIcon="@drawable/iconright_white"
              android:iconPreview="@drawable/iconright"
              android:keyWidth="25%p"/>
  	</Row>
