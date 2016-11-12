@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     Properties props = new Properties()
-    props.load(new FileInputStream(System.getProperty("user.home")+"/androidkeyinfo.properties"))
+//    props.load(new FileInputStream(System.getProperty("user.home")+"/androidkeyinfo.properties"))
     compileSdkVersion 22
     buildToolsVersion "22.0.1"
     defaultConfig {
@@ -10,7 +10,7 @@ android {
         targetSdkVersion 22
         testInstrumentationRunner "android.test.InstrumentationTestRunner"
     }
-    signingConfigs {
+/*    signingConfigs {
         debug {
             storeFile file(System.getProperty("user.home")+"/androidkeystore")
             storePassword props.getProperty("storePassword")
@@ -30,7 +30,7 @@ android {
              minifyEnabled true
              proguardFile file('src/main/assemble/proguard-android.txt')
         }
-    }
+    }*/
 }
 
 dependencies {
@@ -75,13 +75,14 @@ task prepareChrome << {
 }
 
 task assembleChrome << {
+    dependsOn 'assembleRelease'
     copy {
         from "build/outputs/apk/app-release.apk"
         into "build/chrome/vendor/chromium/crx"
     }
 }
 tasks.assembleChrome.dependsOn prepareChrome
-tasks.assembleChrome.dependsOn assembleRelease
+//tasks.assembleChrome.dependsOn assembleRelease
 
 task packageChrome(type:Zip){
     from "build/chrome"
